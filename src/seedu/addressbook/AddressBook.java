@@ -244,7 +244,7 @@ public class AddressBook {
      *
      * @param args full program arguments passed to application main method
      */
-    private static void processProgramArgs(String[] args) {
+    private static void processProgramArgs(String[] args) { //Avoid deep nesting
         if (args.length >= 2) {
             showToUser(MESSAGE_INVALID_PROGRAM_ARGS);
             exitProgram();
