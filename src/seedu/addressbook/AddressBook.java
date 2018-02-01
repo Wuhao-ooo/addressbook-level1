@@ -858,10 +858,14 @@ public class AddressBook {
      */
     private static HashMap<PersonProperty, String> makePersonFromData(String name, String phone, String email) {
         final HashMap<PersonProperty, String> person = new HashMap<>();
+        putInformation(name, phone, email, person);
+        return person;
+    }
+
+    private static void putInformation(String name, String phone, String email, HashMap<PersonProperty, String> person) {
         person.put(PersonProperty.NAME, name);
         person.put(PersonProperty.PHONE, phone);
         person.put(PersonProperty.EMAIL, email);
-        return person;
     }
 
     /**
