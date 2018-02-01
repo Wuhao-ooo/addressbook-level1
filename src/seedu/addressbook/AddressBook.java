@@ -171,6 +171,11 @@ public class AddressBook {
      */
 
     /**
+     * Use Enums feature to store the three fields of input
+     */
+    private enum PersonProperty  {NAME, EMAIL, PHONE};
+
+    /**
      * List of all persons in the address book.
      */
     private static final ArrayList<String[]> ALL_PERSONS = new ArrayList<>();
