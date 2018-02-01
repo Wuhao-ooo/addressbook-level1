@@ -700,7 +700,7 @@ public class AddressBook {
      */
     private static void createFileIfMissing(String filePath) {
         final File storageFile = new File(filePath);
-        if (storageFile.exists()) {
+        if (storageFile.exists()) { //Guard Clause
             return;
         }
 
