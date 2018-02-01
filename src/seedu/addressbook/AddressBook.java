@@ -427,7 +427,9 @@ public class AddressBook {
      */
     private static String getMessageForSuccessfulAddPerson(HashMap<PersonProperty, String> addedPerson) {
         return String.format(MESSAGE_ADDED,
-                getNameFromPerson(addedPerson), getPhoneFromPerson(addedPerson), getEmailFromPerson(addedPerson));
+                getNameFromPerson(addedPerson),
+                getPhoneFromPerson(addedPerson),
+                getEmailFromPerson(addedPerson));
     }
 
     /**
