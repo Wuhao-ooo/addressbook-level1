@@ -145,7 +145,7 @@ public class AddressBook {
     /**
      * If the first non-whitespace character in a user's input line is this, that line will be ignored.
      */
-    private static final char INPUT_COMMENT_MARKER = '#';
+    private static final char INPUT_COMMENT_MARKER = '#'; //Avoid Magic Character
 
     /*
      * This variable is declared for the whole class (instead of declaring it
